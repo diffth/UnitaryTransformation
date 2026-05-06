@@ -191,35 +191,42 @@ body {
 
 /* Presets */
 .presets {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     margin-bottom: 3.5rem;
+    width: 100%;
 }
 
 .btn-preset {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-dim);
-    padding: 0.7rem 1.4rem;
-    border-radius: 14px;
-    font-size: 0.85rem;
-    font-weight: 500;
+    padding: 1.2rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
     transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.btn-preset:hover, .btn-preset.active {
-    background: rgba(255,255,255,0.08);
+.btn-preset:hover {
+    background: rgba(255, 255, 255, 0.08);
     color: #fff;
-    border-color: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-preset.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
     border-color: var(--accent-color);
-    box-shadow: 0 0 15px var(--accent-glow);
+    box-shadow: 0 0 20px var(--accent-glow);
 }
 
 /* Controls */
