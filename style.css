@@ -418,6 +418,23 @@ body {
     letter-spacing: 0.1em;
 }
 
+/* Footer */
+.site-footer {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer-link {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     .timer-container {
